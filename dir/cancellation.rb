@@ -30,7 +30,7 @@ puts a.say_i
 #?クラス変数いつ使う
 #class
 ## インスタンスメソッド→class内で定義したメソッドはクラス（自分自身）.newしたインスタンスからしか呼び出せない（使えない？）クラスのインスタンスから呼び出せる
-.hogehoge == ::hogehoge
+# .hogehoge == ::hogehoge
 
 #キーワード引数
 #インスタンス変数
@@ -63,3 +63,5 @@ a = Introduce.new("太郎","日本語","こんにちは")
 puts a.name
 puts a.language
 puts a.hitokoto
+
+
