@@ -427,3 +427,26 @@
 
 # p str2hash("blue 青 white 白\nred 赤")
 
+class Band
+  attr_reader :name,:member,:formation,:area
+
+  def initialize(name,member,formation,area)
+    @name = name
+    @member = member
+    @formation = formation
+    @area = area
+  end
+
+  def self_introduction
+    "#{@name}です。#{@member}人で活動しています。#{@formation}に結成しました。#{area}でライブしています。"
+  end
+
+  def individual(reader,position)
+    "リーダは、#{reader}です。#{position}やってます。"
+  end
+end
+
+a = Band.new("ベアーズ",3,2022/03/22,"tokyo")
+
+a.self_introduction
+a.individual("田中","vocal")
